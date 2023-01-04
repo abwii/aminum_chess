@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chess</title>
+    <link rel="stylesheet" href="chess.css">
+    <link rel="icon" href="i.png">
+</head>
+<body>
+
+<div class="input">
+    <FORM NAME="form1">
+        <INPUT TYPE="text" class="txt" name="input" VALUE="" maxlength="4" size="6"><BR>
+        <INPUT TYPE="button" class="btn" name="bouton" VALUE="Submit" onClick="controle(form1)" >
+    </FORM> 
+</div>
+
+
+<div class="echiquier">
+    <div class="y">
+        <div class="yc">
+            <h1>8</h1>
+            <h1>7</h1>
+            <h1>6</h1>
+            <h1>5</h1>
+            <h1>4</h1>
+            <h1>3</h1>
+            <h1>2</h1>
+            <h1>1</h1>
+        </div>
+        <div class="cases">
+            <div>
+                <div class="caseB" id="A8">&#9820</div>
+                <div class="caseN" id="B8">&#9822</div>
+                <div class="caseB" id="C8">&#9821</div>
+                <div class="caseN" id="D8">&#9819</div>
+                <div class="caseB" id="E8">&#9818</div>
+                <div class="caseN" id="F8">&#9821</div>
+                <div class="caseB" id="G8">&#9822</div>
+                <div class="caseN" id="H8">&#9820</div>
+            </div>
+            <div>
+                <div class="caseN" id="A7">&#9823</div>
+                <div class="caseB" id="B7">&#9823</div>
+                <div class="caseN" id="C7">&#9823</div>
+                <div class="caseB" id="D7">&#9823</div>
+                <div class="caseN" id="E7">&#9823</div>
+                <div class="caseB" id="F7">&#9823</div>
+                <div class="caseN" id="G7">&#9823</div>
+                <div class="caseB" id="H7">&#9823</div>
+            </div>
+            <div>
+                <div class="caseB" id="A6"></div>
+                <div class="caseN" id="B6"></div>
+                <div class="caseB" id="C6"></div>
+                <div class="caseN" id="D6"></div>
+                <div class="caseB" id="E6"></div>
+                <div class="caseN" id="F6"></div>
+                <div class="caseB" id="G6"></div>
+                <div class="caseN" id="H6"></div>
+            </div>
+            <div>
+                <div class="caseN" id="A5"></div>
+                <div class="caseB" id="B5"></div>
+                <div class="caseN" id="C5"></div>
+                <div class="caseB" id="D5"></div>
+                <div class="caseN" id="E5"></div>
+                <div class="caseB" id="F5"></div>
+                <div class="caseN" id="G5"></div>
+                <div class="caseB" id="H5"></div>
+            </div>
+            <div>
+                <div class="caseB" id="A4"></div>
+                <div class="caseN" id="B4"></div>
+                <div class="caseB" id="C4"></div>
+                <div class="caseN" id="D4"></div>
+                <div class="caseB" id="E4"></div>
+                <div class="caseN" id="F4"></div>
+                <div class="caseB" id="G4"></div>
+                <div class="caseN" id="H4"></div>
+            </div>
+            <div>
+                <div class="caseN" id="A3"></div>
+                <div class="caseB" id="B3"></div>
+                <div class="caseN" id="C3"></div>
+                <div class="caseB" id="D3"></div>
+                <div class="caseN" id="E3"></div>
+                <div class="caseB" id="F3"></div>
+                <div class="caseN" id="G3"></div>
+                <div class="caseB" id="H3"></div>
+            </div>
+            <div>
+                <div class="caseB" id="A2">&#9817</div>
+                <div class="caseN" id="B2">&#9817</div>
+                <div class="caseB" id="C2">&#9817</div>
+                <div class="caseN" id="D2">&#9817</div>
+                <div class="caseB" id="E2">&#9817</div>
+                <div class="caseN" id="F2">&#9817</div>
+                <div class="caseB" id="G2">&#9817</div>
+                <div class="caseN" id="H2">&#9817</div>
+            </div>
+            <div>
+                <div class="caseN" id="A1">&#9814</div>
+                <div class="caseB" id="B1">&#9816</div>
+                <div class="caseN" id="C1">&#9815</div>
+                <div class="caseB" id="D1">&#9813</div>
+                <div class="caseN" id="E1">&#9812</div>
+                <div class="caseB" id="F1">&#9815</div>
+                <div class="caseN" id="G1">&#9816</div>
+                <div class="caseB" id="H1">&#9814</div>
+            </div>
+        </div>
+    </div>
+        <div class="x">
+            <h1>A</h1>
+            <h1>B</h1>
+            <h1>C</h1>
+            <h1>D</h1>
+            <h1>E</h1>
+            <h1>F</h1>
+            <h1>G</h1>
+            <h1>H</h1>
+        </div>
+</div>
+    
+
+<script type="text/javascript" src="chess.js"></script>
+</body>
+</html>
